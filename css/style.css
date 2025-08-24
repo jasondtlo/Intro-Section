@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+* {
+    font-family: "Epilogue", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+    list-style: none;
+    padding-top: 39px;
+    padding-left: 41px;
+    /* position: fixed; */
+    width: 775px;
+}
+.snap {
+    /* font-weight:  !important; */
+    font-size: 27px;
+    color: black;
+    position: relative;
+    top: -13px;
+    padding-right:10px;
+}
+ul li a {
+    /* display: block; */
+    /* box-sizing: border-box; */
+    /* padding: 2px 25px; */
+    color:  hsl(0, 0%, 41%);
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+    position: initial;
+}
+ul li ul.dropdown {
+    position: fixed;
+    width: 153px;
+    height: 135px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 20px 20px 90px rgba(0, 0, 0, 0.279);;
+    /* color: aqua; */
+    z-index: 999;
+    display: none;
+    justify-content: left;
+    align-items: start;
+    margin-left:123px;
+    left: 1px;
+}
+#dropdown2{
+    position: fixed;
+    width: 95px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 205px !important;
+}
+ul li a:hover {
+    color: hsl(0, 0%, 8%);
+    /* transform: rotate(180deg); */
+}
+ul li:hover ul.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2px;
+    background-color: white;
+    position: fixed;
+    top: 65px;
+    /* border-color: black; */
+}
+.ddhead {
+    display: flex;
+    /* background-color: aqua; */
+    gap: 9px;
+    /* width: px !important; */
+    /* padding-right: 20px; */
+    /* position: static; */
+}
+.ddmenu {
+    display: flex;
+    position: relative;
+    top: -16px;
+    gap: 30px;
+    color: black;
+    /* border-color: black */
+    /* background-color: gold; */
+}
+ul li:hover ul.dropdown .ddmenu img {
+    width: 15px;
+    position: relative;
+    right: -16px;
+}
+.topleft {
+    /* display: flex; */
+    margin-left: auto;
+    padding-left: 605px;
+    /* gap: 20px; */
+}
+.register {
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* margin-left: 88%; */
+    font-weight: 600;
+    margin-top: -10px;
+    width: 110px;
+    height: 45px;
+    /* padding-left: 25px; */
+    /* padding-top: 10px; */
+    border: 2.4px solid hsl(0, 0%, 41%);;
+    border-radius: 15px;
+    border-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    /* box-sizing: border-box; */
+    background-color: hsl(0, 0%, 98%);
+}
+.register:hover {
+    border-color: black;
+    color: black;
+    cursor: pointer;
+}
+ul li a:hover .arrow {
+    transform: rotate(180deg);
+    transition: 0.5s ease;
+    transform-origin: center;     
+    transition-property: 0.5s;
+}   
+li:hover a .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+.arrow {
+    /* padding-left: 8px; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.3s ease;
+    transform-origin: center;
+    color: black;
+}
+
+/* When dropdown is active (li hovered), rotate it */
+li:hover > a .arrow {
+  transform: rotate(180deg);
+}
+.box1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 40px;
+    gap: 70px;
+    padding-bottom: 100px;
+}
+.box2 {
+    padding-top: 140px;
+    padding-right: 55px;
+}
+.box2 h1 {
+    font-size: 85px;
+    font-weight: 700;
+}
+.box2 p {
+    color: hsl(0, 0%, 41%);
+    padding-top: 50px;
+    width: 530px;
+    height:120px;
+    font-size: 20px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+    }
+.box2 button {
+    font-weight: 800;
+    font-size: 17px;
+    padding-top: 3px;
+    color: hsl(0, 0%, 41%);;
+    background-color: hsl(0, 0%, 98%);
+    width: 180px;
+    height: 60px;
+    border-radius: 15px;
+    border-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+}
+.box2 button:hover {
+    cursor: pointer;
+    color: black;
+    border-color: black;
+}
+.others {
+    padding-right: 30px;
+}
+.box3 {
+    padding-top: 90px;
+    /* padding-bottom: ; */
+}
+
